@@ -1,11 +1,5 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import LandingPage from './components/LandingPage.vue'
-import ButtonPage from './components/ButtonPage.vue'
-import IdPage from './components/IdPage.vue'
+import router from './router'
 
-const routes = [
-    {path: '/', component: LandingPage}
-]
-
-createApp(App).mount('#app')
+createApp(App).use(router).mount('#app')
